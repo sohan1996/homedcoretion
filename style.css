@@ -1,0 +1,118 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.banner{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(modern-vintage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+h2{
+  color: #fff;
+  float: left;
+}
+.n{
+  color: #f2f2f2;
+  font-family: 'Shalimar', cursive;
+  font-size: 50px;
+}
+.i{
+  color: red;
+  font-weight: bold;
+}
+.logo{
+  width: 50%;
+  cursor: pointer;
+  margin: 0 ;
+}
+.navbar ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px 40px;
+  float: left;
+  margin: 2px solid #fff;
+  position: relative;
+
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #353535;
+  border-radius: 5px 5px 0 0;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.2s all ease;
+}
+.navbar ul li:hover::after{
+  background: #fff;
+  width: 100%;
+
+}
+.content{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.content h1{
+  font-size: 50px;
+  margin-top: 80px;
+
+}
+.content p{
+  margin: 20px;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  background: transparent;
+  border: 2px solid #fff;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+button .span{
+  background: #e7b3ff;
+  height: 100%;
+  width: 0%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+    transition: 0.3s all ease;
+
+}
+button:hover .span{
+  width: 100%;
+  background-color: #c64dff;
+}
